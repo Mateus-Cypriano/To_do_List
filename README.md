@@ -13,3 +13,5 @@ Pretendo adicionar alguns detalhes como a transformação do texto quando a Chec
 
 ![image](https://github.com/user-attachments/assets/5eeb6806-e0da-48f1-a703-63bccf8bae10)
 
+Atualizado código para lista de tarefas ficar salva no próprio navagador utilizando uma string JSON com localStorage. 
+
