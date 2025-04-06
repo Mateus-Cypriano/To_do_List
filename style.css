@@ -45,3 +45,9 @@ body {
     border-radius: 5px;
     padding:5px 10px
 }
+
+.tarefa-concluida{
+    text-decoration: line-through;
+    color: #1410eb;
+
+}
