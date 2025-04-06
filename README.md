@@ -15,7 +15,7 @@ Pretendo adicionar alguns detalhes como a transformação do texto quando a Chec
 
 Atualizado código para lista de tarefas ficar salva no próprio navagador utilizando uma string JSON com localStorage. 
 
-Atualizado: Adicionado lógica para checkbox ficar salvo no status da tarefa assim continuar marcado caso já tivess sido feito. E adicionado estilização para que o texto se transforme se o checkbox estiver marcado.  
+Atualizado: Adicionado lógica para checkbox ficar salvo no status da tarefa assim continuar marcado caso já tivesse sido feito. E adicionado estilização para que o texto se transforme se o checkbox estiver marcado.  
 ![image](https://github.com/user-attachments/assets/6cb6c219-bcff-4569-bb5d-aa71746bb974)
 
 
