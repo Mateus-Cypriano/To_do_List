@@ -7,6 +7,7 @@
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
+    margin-left: 8px;
     
 }
 
@@ -56,7 +57,7 @@ body {
 
 #tarefa {
     background-color: #DADBE3;
-    width: 250px;
+    width: 280px;
     border-radius: 5px;
     padding:5px 10px
 }
@@ -82,6 +83,12 @@ body {
 }
 
 .titulo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,7 +130,7 @@ body {
     #tarefa {
         /* Aumenta a fonte */
         font-size: 1em;
-        width: 220px;
+        width: 250px;
     }
 
     .adicionar-button {
