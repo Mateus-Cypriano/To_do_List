@@ -3,6 +3,7 @@ const tarefaInput = document.getElementById("tarefa");
 const adicionarBotao = document.getElementById("adicionar");
 const listaTarefas = document.getElementById("tarefas");
 const tituloLista = document.getElementById("titulo-lista");
+const limparBotao = document.getElementById("limpar");
 
 // Carregar tarefas do localStorage ao iniciar
 //document.addEventListener("DOMContentLoaded", carregarTarefas);
@@ -20,6 +21,7 @@ tarefaInput.addEventListener("keypress", function(e) {
 });
 
 tituloLista.addEventListener("input", salvarTitulo);
+limparBotao.addEventListener("click", limparTarefas); 
 
 // Funções
 function salvarTitulo() {
@@ -31,6 +33,23 @@ function carregarTitulo() {
     if (tituloSalvo) {
         tituloLista.textContent = tituloSalvo;
     }
+};
+
+function limparTarefas() {
+    // Pergunta se tem certeza que vai excluir todas as tarefas
+    const confirmacao = confirm("Tem certeza que deseja apagar todas as tarefas?")
+
+    // Se o usuário clicar em "OK", a lógica de limpeza é executada
+    if (confirmacao) {
+        // Remove todos os elementos filhos da lista de tarefas
+        while (listaTarefas.firstChild) {
+            listaTarefas.removeChild(listaTarefas.firstChild);
+        }
+
+        // Limpa a chave 'tarefas' do LocalStorage
+        localStorage.removeItem("tarefas");
+    }
+
 };
  
 function adicionarTarefa() {
