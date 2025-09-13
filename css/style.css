@@ -57,7 +57,7 @@ body {
 
 #tarefa {
     background-color: #DADBE3;
-    width: 280px;
+    width: 300px;
     border-radius: 5px;
     padding:5px 10px
 }
@@ -130,7 +130,7 @@ body {
     #tarefa {
         /* Aumenta a fonte */
         font-size: 1em;
-        width: 250px;
+        width: 285px;
     }
 
     .adicionar-button {
