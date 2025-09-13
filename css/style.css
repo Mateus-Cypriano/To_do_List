@@ -21,6 +21,26 @@
 
 }
 
+.clear-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.limpar-button {
+    font-size: 1.1em;
+    border: none;
+    color: #fff;
+    background-color: #dc3545;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.limpar-button:hover {
+    background-color: #c82333;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -30,7 +50,7 @@ body {
     font-weight: bold;
     min-height: 100vh;
     margin: 0;
-     background-image: url('https://img.freepik.com/fotos-premium/lista-de-compras-e-carrinho-de-compras-em-fundo-de-madeira_165146-326.jpg'); /* 1. Insere a imagem */
+    background-image: url('https://img.freepik.com/fotos-premium/lista-de-compras-e-carrinho-de-compras-em-fundo-de-madeira_165146-326.jpg'); /* 1. Insere a imagem */
     background-size: cover; /* 2. Redimensiona a imagem para cobrir toda a área */
     background-position: center center; /* 3. Centraliza a imagem no meio da tela */
     background-repeat: no-repeat; /* 4. Evita que a imagem se repita */
@@ -148,4 +168,52 @@ body {
     }
 
     
+}
+
+@media print {
+    /* 1. Ocultar elementos que não são a lista de tarefas */
+    body{
+        background-color: transparent !important;
+    }
+
+    .input-container,
+    .limpar-button {
+        display: none !important;
+    }
+
+    /* 2. Austar layout da lista para impressão */
+    .todo-container{
+        /* Remove a sombra e a borda arredondada */
+        box-shadow: none !important;
+        border-radius: 0 !important;
+
+        /* Ajusta a largura e a margem */
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    ul li {
+        /* Garante que o texto fique legível */
+        font-size: 16px;
+        color: #000;
+        
+        display: flex;
+        align-items: center;
+        padding: 8px 0 !important;
+    }
+
+    /* Ocultar os botões de lixeira e os checkboxes */
+    ul li .check,
+    ul li .excluir {
+        display: none !important;
+    }
+
+    /* Estliza o texto da tarefa */
+    ul li span {
+        text-decoration: none !important;
+        color: #000;
+        margin-left: 0 !important;
+    }
+
 }
