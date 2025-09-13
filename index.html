@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Lista de tarefas</title>
 </head>
 <body>
     <div class="lista-tarefas">
-        <h1>Minha Lista de Tarefas:</h1>
+        <div class="titulo-container">
+            <h1 id="titulo-lista" contenteditable="true">Minha Lista de Tarefas:</h1>
+            <i class="fas fa-pencil-alt"></i>
+        </div>
         <input id="tarefa" type="text" placeholder="Adicione uma tarefa">
-        <button id="adicionar">Adicionar</button>
+        <button id="adicionar">+</button>
         <ul id="tarefas">
             <!--Tarefas-->
         </ul>
     </div>
     
-    <script src="script.js"></script>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,142 @@
+#adicionar {
+    background-color: #1410eb;
+    color: #fff;
+    border: 0.5px solid #000;
+    padding: 2px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+#adicionar:hover{
+    background-color: #fff;
+    color: #1410eb;
+    border: 1px solid #1410eb;
+    transition: ease-in-out 0.2s;
+    font-weight: bold;
+    
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, Sans-serif;
+    color: #000;
+    font-weight: bold;
+    min-height: 100vh;
+    margin: 0;
+     background-image: url('https://img.freepik.com/fotos-premium/lista-de-compras-e-carrinho-de-compras-em-fundo-de-madeira_165146-326.jpg'); /* 1. Insere a imagem */
+    background-size: cover; /* 2. Redimensiona a imagem para cobrir toda a área */
+    background-position: center center; /* 3. Centraliza a imagem no meio da tela */
+    background-repeat: no-repeat; /* 4. Evita que a imagem se repita */
+    
+}
+
+.excluir {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #dc3545; /* Cor vermelha que sugere "excluir" */
+    font-size: 1em; /* Aumenta o tamanho do ícone */
+    margin-left: 8px;
+    padding: 2px;
+    display: inline-block;
+    transition: color 0.3s ease;
+    
+}
+
+.excluir:hover{
+        color: #c82333; /* Cor mais escura ao passar o mouse */
+
+}
+
+#tarefa {
+    background-color: #DADBE3;
+    width: 300px;
+    border-radius: 5px;
+    padding:5px 10px
+}
+
+#tarefa li{
+    font-size: 18px;
+}
+
+.tarefa-concluida{
+    text-decoration: line-through;
+    color: #9494a3;
+
+}
+
+.lista-tarefas {
+    opacity: 93%;
+    background-color: #ffffff; /* Cor de fundo para o "quadro" */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.85); /* Sombra suave para destacar o quadro */
+    width: 90%; /* Largura do container */
+    max-width: 500px; 
+}
+
+.titulo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo-lista {
+    cursor: pointer;
+}
+
+.fa-pencil-alt {
+    color: #999;
+    font-size: 1.2em;
+    margin-left: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.titulo-container:hover .fa-pencil-alt{
+    opacity: 1;
+}
+
+/* Media query para telas menores que 600px de largura */
+@media (max-width: 600px) {
+    
+    .todo-container{
+        /* remove a sombra para um visual mais limpo */
+        box-shadow: none;
+
+        /* ajusta padding para telas menores */
+        padding: 10px;
+
+        /* Ocupa a largura total da tela */
+        width: 100%;
+
+        /* Remove arredondamento das bordas para que se alinhe com a tela */
+        border-radius: 0;
+    }
+
+    #tarefa {
+        /* Aumenta a fonte */
+        font-size: 1em;
+    }
+
+    .adicionar-button {
+        /* Aumentando a área clicavel do botão */
+        padding: 10px;
+    }
+
+    ul li {
+        /* ajusta espaçamento interno das tarefas */
+        padding: 10px 0;
+    }
+
+    .fa-pencil-alt {
+        display: none;
+    }
+    
+}
